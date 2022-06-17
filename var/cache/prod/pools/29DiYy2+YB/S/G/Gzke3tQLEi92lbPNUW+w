@@ -1,0 +1,83 @@
+<?php //549968cecb863f2df7100db5fc5e38c6
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT f0_.id AS id_0, f0_.published_at AS published_at_1, f0_.title AS title_2, f0_.description AS description_3, f0_.miniature AS miniature_4, f0_.picture AS picture_5, f0_.video_id AS video_id_6, f0_.id_niveau_id AS id_niveau_id_7 FROM formation f0_ ORDER BY f0_.published_at DESC LIMIT 2',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'f' => 'App\\Entity\\Formation',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'published_at_1' => 'publishedAt',
+                    'title_2' => 'title',
+                    'description_3' => 'description',
+                    'miniature_4' => 'miniature',
+                    'picture_5' => 'picture',
+                    'video_id_6' => 'videoId',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'id_niveau_id_7' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'f' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'id_niveau_id_7' => 'id_niveau_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'f',
+                    'published_at_1' => 'f',
+                    'title_2' => 'f',
+                    'description_3' => 'f',
+                    'miniature_4' => 'f',
+                    'picture_5' => 'f',
+                    'video_id_6' => 'f',
+                    'id_niveau_id_7' => 'f',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Formation',
+                    'published_at_1' => 'App\\Entity\\Formation',
+                    'title_2' => 'App\\Entity\\Formation',
+                    'description_3' => 'App\\Entity\\Formation',
+                    'miniature_4' => 'App\\Entity\\Formation',
+                    'picture_5' => 'App\\Entity\\Formation',
+                    'video_id_6' => 'App\\Entity\\Formation',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
