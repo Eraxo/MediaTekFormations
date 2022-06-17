@@ -1,0 +1,3 @@
+<?php //App%255CController%255Cadmin%255CAdminNiveauxController
+
+return [PHP_INT_MAX, []];
